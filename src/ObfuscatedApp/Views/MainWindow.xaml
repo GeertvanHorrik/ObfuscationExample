@@ -1,0 +1,20 @@
+﻿<catel:Window x:Class="ObfuscatedApp.Views.MainWindow"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:catel="http://schemas.catelproject.com"
+              ResizeMode="CanResize">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="{Binding Title}" FontSize="16" FontWeight="SemiBold" />
+
+        <Label Grid.Row="1" Content="{Binding FirstName}" />
+        <Label Grid.Row="2" Content="{Binding LastName}" />
+    </Grid>
+
+</catel:Window>
